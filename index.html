@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Open BHS Field Service HSMS and Safety Refresher Training from one main page.">
+  <meta name="description" content="Open BHS Field Service HSMS, Full Corporate HSMS, and Safety Refresher Training from one main page.">
   <meta name="theme-color" content="#005b46">
   <title>BHS Safety Learning &amp; Resources</title>
   <style>
@@ -84,7 +84,7 @@
     .eyebrow::before { content: ''; width: 30px; height: 4px; background: var(--gold); border-radius: 4px; }
     h1 { margin: 0; font-size: clamp(2rem, 3.5vw, 2.9rem); line-height: 1.15; font-weight: 700; letter-spacing: -.035em; }
     .intro p:last-child { margin: 1rem 0 0; font-size: 1.0625rem; line-height: 1.65; color: var(--muted); }
-    .programs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+    .programs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
     .program {
       --accent: var(--blue);
       --tint: #edf4ef;
@@ -99,6 +99,7 @@
       box-shadow: 0 6px 22px rgba(23, 37, 56, .035);
     }
     .program.field { --accent: #087c78; --tint: #e9f4f1; }
+    .program.corporate { --accent: #30516b; --tint: #ebf1f5; }
     .program.refresher { --accent: #073e35; --tint: #edf2ed; }
     .card-top { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
     .icon { display: grid; place-items: center; width: 56px; height: 56px; background: var(--tint); color: var(--accent); border-radius: 12px; }
@@ -191,7 +192,7 @@
     <div class="intro">
       <p class="eyebrow">BHS Safety</p>
       <h1>Safety Learning &amp; Resources</h1>
-      <p>Choose a program to explore field service safety practices or refresher training.</p>
+      <p>Choose a program for field service safety, corporate HSMS resources, or refresher training.</p>
     </div>
 
     <section id="programs" class="programs" aria-label="Available programs">
@@ -204,6 +205,17 @@
         <p class="description">Review field service safety requirements, task guidance, policy references, and editable forms for work at customer sites.</p>
         <p class="topics"><strong>Field service guidance</strong>Safe work &nbsp;·&nbsp; Policies &nbsp;·&nbsp; Forms</p>
         <a class="open-program" href="./BHS%20Field%20Service%20HSMS%20Interface.html" target="_blank" rel="noopener" aria-describedby="new-tab-note">Open Field Service HSMS</a>
+      </article>
+
+      <article class="program corporate" aria-labelledby="corporate-title">
+        <div class="card-top">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="7" y="4" width="18" height="24" rx="2"/><path d="M12 10h8m-8 6h8m-8 6h8M4 8v21h17"/></svg></div>
+          <span class="type">Corporate safety</span>
+        </div>
+        <h2 id="corporate-title">Full Corporate<br>HSMS</h2>
+        <p class="description">Explore company-wide safety training, corporate manuals, and editable forms and permits.</p>
+        <p class="topics"><strong>Corporate HSMS resources</strong>Learning &nbsp;&middot;&nbsp; Manuals &nbsp;&middot;&nbsp; Forms</p>
+        <a class="open-program" href="./BHS%20Full%20Corporate%20HSMS%20Interface.html" target="_blank" rel="noopener" aria-describedby="new-tab-note">Open Full Corporate HSMS</a>
       </article>
 
       <article class="program refresher" aria-labelledby="refresher-title">
